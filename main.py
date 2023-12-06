@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get('/', response_class=HTMLResponse)
 def html_response():
-    return '<h1> Hello World:)! </h1>'
+    return '<h1> Hello World </h1>'
 
 @app.get('/hello/{user}', response_class=HTMLResponse)
 def hello_user(user:str):
